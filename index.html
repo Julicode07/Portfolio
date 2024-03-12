@@ -1,16 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="¿Buscas los últimos avances en tecnología? En nuestra tienda online encontrarás una amplia gama de productos de las mejores marcas. Smartphones, laptops,家電, y mucho más. ¡Compra con seguridad y recibe en tu casa!">
+    <!-- BOXICONS -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <!-- REMIX ICONS -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.2.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>Portafolio</title>
-</head>
-<body>
-    <header>
-        <a href="">Julicode07</a>
-        <ul>
-            <li>Hola</li>
-        </ul>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="normalize.css">
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header">
+      <a href="index.html" class="logo">Julicode07</a>
+      <ul class="nav-list">
+        <li><a href="pages/computers/index.html">Computadores</a></li>
+        <li><a href="pages/cellphones/index.html">Celulares</a></li>
+        <li><a href="pages/office/index.html">Oficina</a></li>
+        <li>
+          <a href="pages/technical-service7index.html">Servicio Técnico</a>
+        </li>
+      </ul>
+
+      <div class="nav-rigth">
+        <i class="ri-search-line nav__search" id="search-btn"></i>
+        <i class="ri-shopping-cart-line"></i>
+        <a href="sign/index.html"><i class="ri-user-line"></i></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+      </div>
     </header>
-</body>
+    <!--==================== SEARCH ====================-->
+
+    <div class="search" id="search">
+      <form class="search-input">
+        <a href="" hidden></a>
+        <input
+          type="text"
+          placeholder="¿Qué estás buscando?"
+          class="search__input"
+        />
+        <div class="autocom-box">
+          <!-- here list are inserted from javascript -->
+        </div>
+        <div class="icon">
+          <i class="ri-search-line search__icon"></i>
+        </div>
+      </form>
+      <i class="ri-close-line search__close" id="search-close"></i>
+    </div>
+  </body>
+  <script src="search/script.js"></script>
+  <script src="search/search.js"></script>
+  <script src="search/suggestions.js"></script>
 </html>
